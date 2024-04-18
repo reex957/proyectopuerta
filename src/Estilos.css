@@ -1,0 +1,72 @@
+.linkF {
+    list-style: none;
+    padding: 0;
+}
+
+.linksF {
+    text-decoration: none;
+    color: white;
+}
+
+.bodyF {
+    background-color: #027fdb;
+    color: white;
+    padding-top: 5px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.socialIcon{
+    font-size: 30px;
+    padding: 13.5px;
+    color: #aaaeb6;
+}
+.lista{
+    padding: 0;
+}
+
+
+/* FOOTER */
+
+.footer{
+    background-color: #000000;
+    color: white;
+    padding: 3%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.labelCorreo {
+    color: #aaaeb6;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.inputCorreo {
+    border-radius: 6px 0px 0px 6px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #aaaeb6;
+    padding: 10px;
+    width: calc(100% - 45px);
+    margin-right: 5px;
+}
+
+.botonFlecha {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #D3D3D3;
+    border-radius: 0 10px 10px 0;
+    padding: 10px 15px;
+}
+.botonFlecha:active{
+    border: 2px solid #ffffff;
+}
+
+/* FOOTER END */

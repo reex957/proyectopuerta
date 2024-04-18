@@ -1,0 +1,69 @@
+.unique-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+  }
+  
+  .unique-card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+  }
+  
+  .unique-form {
+    width: 100%;
+  }
+  
+  .unique-floating-label {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .unique-label {
+    position: relative;
+    top: 50%;
+    left: 0.75rem;
+    transform: translateY(-50%);
+    font-size: 0.875rem;
+    color: #495057;
+    pointer-events: none;
+    transition: top 0.1s ease, left 0.1s ease, font-size 0.1s ease;
+  }
+  
+  .unique-input {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+  }
+  
+  .unique-input:focus + .unique-label,
+  .unique-input:not(:placeholder-shown) + .unique-label {
+    top: 0;
+    left: 0;
+    font-size: 0.75rem;
+  }
+  
+  .unique-select {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+  }
+  
+  .unique-button {
+    width: 100%;
+  }
+  
+  .unique-text-center {
+    text-align: center;
+  }
+  
+  .unique-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  

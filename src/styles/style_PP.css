@@ -1,0 +1,17 @@
+:root{
+    --font-heading-scale: 1.0;
+    --font-heading-line-height-scale: 1.0;
+}
+h1{
+    font-size: calc(var(--font-heading-scale) * 54px)!important;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    font-size: calc(var(--font-heading-scale) * 42px)!important;
+    line-height: calc(var(--font-heading-line-height-scale)* calc(var(--font-heading-scale)* 50px));
+}
+h3{
+    font-size: calc(var(--font-heading-scale) * 34px)!important;
+    line-height: calc(var(--font-heading-line-height-scale)* calc(var(--font-heading-scale)* 42px));
+}

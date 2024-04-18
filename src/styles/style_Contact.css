@@ -1,0 +1,8 @@
+.sli{
+    content: "\A"; /* Representa un salto de línea */
+    white-space: pre;
+}
+.ifc{
+    width: 20rem;
+    height: auto;
+}
