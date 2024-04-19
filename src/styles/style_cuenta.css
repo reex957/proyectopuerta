@@ -1,0 +1,87 @@
+.unique-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    margin: auto;
+  }
+  
+  .unique-heading {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .unique-card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .unique-form {
+    width: 100%;
+  }
+  
+  .unique-floating-label {
+    position:relative;
+    margin-bottom: 1rem;
+  }
+  
+  .unique-label {
+    position: relative;
+    top: 10px;
+    left: 15px;
+    font-size: 0.875rem;
+    color: #495057;
+    pointer-events: none;
+    transition: top 0.1s ease, left 0.1s ease, font-size 0.1s ease;
+  }
+  
+  .unique-input {
+    width: calc(100% - 30px);
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+  }
+  
+  .unique-input:focus + .unique-label,
+  .unique-input:not(:placeholder-shown) + .unique-label {
+    top: 0;
+    left: 0;
+    font-size: 0.75rem;
+  }
+  
+  .unique-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .unique-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .unique-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .unique-col {
+    flex: 1;
+    margin-right: 1rem;
+  }
+  
+  .unique-col:last-child {
+    margin-right: 0;
+  }
+  

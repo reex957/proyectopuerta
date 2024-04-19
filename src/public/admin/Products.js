@@ -55,23 +55,20 @@ export default function Device() {
         <Container className='mt-4'>
             <div style={{display:'flex',alignContent:'center'}}>
                 <FontAwesomeIcon className='me-3' icon={faTabletButton} style={{color: "#000000",height:40}} />
-                <h1>Dispositivos</h1>
+                <h1>Productos</h1>
             </div>
-            <Button variant='primary' className='mb-4' onClick={() => nuevoDispositivo()}>Nuevo dispositivo</Button>
+            <Button variant='primary' className='mb-4' onClick={() => nuevoDispositivo()}>Nuevo Producto</Button>
             {
                 loading ? (<Cargando />) : (
                     <>
                         <Table striped bordered hover responsive>
                             <thead>
                                 <tr>
-                                    <th>Dispositivo</th>
-                                    <th>sensor pir</th>
-                                    <th>sensor rfid</th>
-                                    <th>servomotor</th>
-                                    <th>camara</th>
-                                    <th>keypad</th>
-                                    <th>estado</th>
-                                    <th>Asignado</th>
+                                    <th>Nombre</th>
+                                    <th>Descripcion</th>
+                                    <th>Precio</th>
+                                    <th>Imagen</th>
+                                    <th>Stock</th>
                                     <th>Acciones</th>
                                 </tr>
                             </thead>
@@ -82,10 +79,8 @@ export default function Device() {
                                         <td>{dispositivo.pir}</td>
                                         <td>{dispositivo.rfid}</td>
                                         <td>{dispositivo.servo}</td>
+                                        <td>{dispositivo.stock}</td>
                                         <td>{dispositivo.camara}</td>
-                                        <td>{dispositivo.keypad}</td>
-                                        <td>{dispositivo.estado}</td>
-                                        <td>{dispositivo.asignado ? 'Asignado' : 'No asignado'}</td>
                                         <td>
                                             <div className="d-grid gap-2">
                                                 <Button variant='warning' className='' onClick={() => handleAsignarClick(dispositivo._id)}>Asignar</Button>

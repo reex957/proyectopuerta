@@ -26,9 +26,6 @@ export default function Navigation() {
                             <NavDropdown title='ADMIN'>
                                 <NavDropdown.Item as={NavLink} to={routes.usuariosA}>Usuarios</NavDropdown.Item>
                                 <NavDropdown.Item as={NavLink} to={routes.productsA}>Productos</NavDropdown.Item>
-                                <NavDropdown.Item as={NavLink} to={routes.administradoresA}>Administradores</NavDropdown.Item>
-                                <NavDropdown.Item as={NavLink} to={routes.iotA}>Iot</NavDropdown.Item>
-
                             </NavDropdown>
                         ) : hasRole('usuario') ? (
                             <NavDropdown title='USER'>

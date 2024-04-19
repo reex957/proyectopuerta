@@ -10,12 +10,12 @@ import Faq from '../public/pages/Faq';
 import Contacto from '../public/pages/Contacto';
 import Producto from '../public/pages/Producto';
 import Users from '../public/admin/Users';
+import ProductsA from '../public/admin/Products';
 import NotFoundPage from '../public/pages/NotFoundPage';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 import roles from '../helpers/roles';
 import routes from '../helpers/routes';
-import Device from '../public/admin/Device';
 import Dashboard from '../public/user/iot/Dashboard';
 import Devices from '../public/user/iot/Devices';
 import IoTLayout from '../layouts/IoTLayout';
@@ -52,7 +52,7 @@ export default function AppRouter() {
             </Route>
             <Route element={<PrivateRoute hasRole={roles.admin} />}>
                 <Route path={routes.usuariosA} element={<Users />} />
-                <Route path={routes.iotA} element={<Device />} />
+                <Route path={routes.productsA} element={<ProductsA />} />
             </Route>
             <Route path='*' element={<NotFoundPage />} />
         </Routes>
